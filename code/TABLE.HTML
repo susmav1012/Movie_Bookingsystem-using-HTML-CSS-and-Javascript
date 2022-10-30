@@ -1,0 +1,74 @@
+<html>
+<center>
+<br><br><br>
+
+<h1>MOVIE SHOW TIMINGS</h1>
+<br><br><br><br>
+
+<table border=10>
+<body style=background-image:url(time.jpg);">
+
+<style>
+table{width:20em}
+th{text-align:center}
+td{text-align:center}
+h1{
+color:white;
+ font-family: algerian;
+    line-height: 1.7em;
+}
+</style>
+
+
+<script>
+var a=new Array(3);
+a[0]="MORNING SHOW";
+a[1]="NOON SHOW";
+a[2]="EVENING SHOW";
+a[3]="NIGHT SHOW";
+
+var b=new Array(3);
+b[0]="9.00 AM-11.00 AM";
+b[1]="12.00 PM-4.00 PM"
+b[2]="5.00 PM-11.00 PM"
+b[3]="12.00 AM-3.00 AM";
+
+
+document.write("<th><h1>SESSION</th>");
+document.write("<th><h1>TIMINGS</th>");
+for(var i=0;i<3;i++)
+{
+document.write("<tr><td>"+a[i]+"</td>");
+document.write("<td>"+b[i]+"</td></tr>");
+}
+
+</script>
+</table>
+<section id="features">
+   <div class="box">
+<h3>
+    GREAT LOCATION
+</h3>
+<p>
+    great location...................................................
+</p>
+
+   </div>
+   <div class="box">
+    <h3>
+        SOUND SYSTEMS
+    </h3>
+    <p>
+        sound systems...................................................
+    </p>
+   </div>
+   <div class="box">
+    <h3>
+        FITNESS ROOM
+    </h3>
+    <p>
+        fitness...................................................
+    </p>
+   </div>
+</section>
+</html>

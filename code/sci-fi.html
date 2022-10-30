@@ -1,0 +1,59 @@
+<html>
+<head>
+<script src="jquery-min.js"></script>
+</head>
+<style>
+body
+{
+background-image:url('sci.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+
+<h1 style="color:white;background-color: black;"> M O V I E S L I S T </h1>
+<body style="background-color:black;">
+<h2 style="color: white;font-family: verdana;"> SCIENCE FICTION MOVIES </h2>
+<style>
+#grad1 {
+height: 50px;
+background-color: red;
+background-image: linear-gradient(black, white);
+}
+</style>
+<div id="grad1"></div>
+
+<script>
+$(document).ready(function(){
+$("ul").mouseenter(function(){
+$(this).css("background-color","sci.jpg");
+});
+$("ul").mouseleave(function(){
+$(this).css("background-color","black");
+});
+});
+</script>
+
+<h1>
+<font color=white>
+<ul style="margin: 50px;border: 4px solid blue;">
+
+<li>24 </li>
+<img src="24.jpg" height=200 width=200 usemap="#mymap">
+<map name=mymap>
+<area href="24.html" coords="7,0,33,3,49,1,63,1,78,2,97,6,125,6,138,6,159,6,190,2,211,2,218,8,218,18,227,28,229,45,235,59,239,76,241,98,238,122,237,148,229,185,205,196,155,199,54,195,41,195,28,195,17,190,64,186,82,191,114,192,126,195,142,194,14,176,11,166,10,158,10,150,10,135,10,126,10,107,10,89,10,71,6,51,6,42,6,30,7,20,9,14" shape="poly">
+</map>
+<li>ENDHIRAN </li> 
+<img src="endhiran.jpg" height=200 width=200 usemap="#mymap1">
+<map name=mymap1>
+<area href="endhiran.html" coords="7,0,33,3,49,1,63,1,78,2,97,6,125,6,138,6,159,6,190,2,211,2,218,8,218,18,227,28,229,45,235,59,239,76,241,98,238,122,237,148,229,185,205,196,155,199,54,195,41,195,28,195,17,190,64,186,82,191,114,192,126,195,142,194,14,176,11,166,10,158,10,150,10,135,10,126,10,107,10,89,10,71,6,51,6,42,6,30,7,20,9,14" shape="poly">
+</map>
+<li> TIC-TIC-TIC</li>
+<img src="tic.jpg" height=200 width=200 usemap="#mymap2">
+<map name=mymap2>
+<area href="tic.html" coords="7,0,33,3,49,1,63,1,78,2,97,6,125,6,138,6,159,6,190,2,211,2,218,8,218,18,227,28,229,45,235,59,239,76,241,98,238,122,237,148,229,185,205,196,155,199,54,195,41,195,28,195,17,190,64,186,82,191,114,192,126,195,142,194,14,176,11,166,10,158,10,150,10,135,10,126,10,107,10,89,10,71,6,51,6,42,6,30,7,20,9,14" shape="poly">
+</map>
+</ul>
+
+</html>

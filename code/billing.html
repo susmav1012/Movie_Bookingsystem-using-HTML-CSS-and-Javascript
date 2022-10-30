@@ -1,0 +1,91 @@
+<html>
+<center>
+
+</center>
+
+<script>
+function myfun()
+{
+var fname,lname,date,address,email,phno,city,cost,qty,total;
+date=myform.mydate.value;
+fname=myform.mytext1.value;
+lname=myform.mytext2.value;
+address=myform.mytext3.value;
+email=myform.email.value;
+phno=myform.phno.value;
+city=myform.mytext7.value;
+qty=myform.number.value;
+cost=myform.numb.value;
+total=myform.number1.value;
+
+
+document.write("<center><h1>BILLING</h1></center>"+date);
+document.write("<br><b>DATE:"+date);
+document.write("<br><br><b>FIRST NAME:"+fname);
+document.write("<br><br><b>LAST NAME:"+lname);
+document.write("<br><br><b>ADDRESS:"+address);
+document.write("<br><br><b>E-MAIL:"+email);
+document.write("<br><br><b>CONTACT NUMBER:"+phno);
+document.write("<br><br><b>CITY:"+city);
+document.write("<br><br><b>QUANTITY:"+qty);
+document.write("<br><br><b>COST: $"+cost);
+document.write("<br><br><b>TOTAL: $"+total);
+
+
+}
+
+function calc()
+{
+var qty=document.getElementById('qty').value;
+var cost=document.getElementById('cost').value;
+var total=document.getElementById('total');
+var myresult=qty*cost;
+document.getElementById('total').value=myresult;
+}
+
+</script>
+
+<center>
+<h1>HOTEL AS</h1>
+<hr>
+<body style="background-image:url(.jpg);">
+<h2> BILLING FORM</h2></center>
+<hr>
+<h3>
+
+<hr>
+<form name=myform>
+<center>
+<input type=text    ><br>
+<input type=password   ><br>
+<input type=button value="LOGIN" ><br>
+</center>
+<hr>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+DATE:<input type=date name=mydate><br><br><br>
+
+FIRST NAME:<input type=text name=mytext1   ><br><br><br>
+
+LAST NAME:<input type=text name=mytext2    ><br><br><br>
+
+ADDRESS:<br>
+<textarea rows="5" cols="50" name=mytext3>  </textarea><br><br>
+
+E-MAIL:<input type="email" name="email"><br><br><br>
+
+CONTACT NUMBER:<input type=text name=phno ><br><br><br>
+
+CITY:<input type=text name=mytext7><br><br><br>
+
+QUANTITY:<input id="qty" type=number name="number" min="1" ><br><br><br>
+
+COST:<input id="cost" type=number name="numb" oninput=calc() ><br><br><br>
+
+TOTAL:<input id="total" type=number name="number1">
+
+
+<input type=button value="SUBMIT AND VIEW PROFILE" onClick=myfun() >
+<input type=button value="RESET" >
+</form>
+</body>
+</html>

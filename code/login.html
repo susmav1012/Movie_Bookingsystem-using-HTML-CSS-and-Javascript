@@ -1,0 +1,73 @@
+<html>
+
+    
+<script>
+
+
+    
+function validpassword(){
+        var pw=document.getElementById("paswd").value;
+        if(pw==""){
+           document.getElementById("message").innerHTML=" &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;Fill the password please!!";
+            return false;
+        }
+        if(pw.length<8){
+            document.getElementById("message").innerHTML="  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;Password length should be atleast 8 letters!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+            return false;
+        }
+        if(pw.length>15){
+            document.getElementById("message").innerHTML="  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;Password length should not exceeds 15 letters!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+            return false;
+        }
+        else{
+            alert("password is valid!!!!!!!");   
+        }
+       
+    }
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center" class="front"><h1><font color=red><mark>LOGIN </mark></font> </h1>
+<form action="bill.html" method="post"  onsubmit="return validpassword()" autocomplete="on">
+<label style="font-size:15pt;"for="uname">&emsp;&emsp;<mark>Enter your full name:</mark></label>
+&emsp;&emsp;<input type="text" id="uname" name="uname" required><br><br>
+<label style="font-size:15pt;"for="email">&emsp;&emsp;<mark>Enter your E-mail Id:</mark></label>
+&emsp;&emsp;<input type="text" id="email" name="email" required><br><br>
+<label style="font-size:15pt;"for="paswd">&emsp;&emsp;<mark>Enter your password:</mark></label>
+&emsp;&emsp;&emsp;<input type="password" id="paswd" name="paswd"><br><br>
+<span id = "message" style="color:blue"></span> <br><br>
+&emsp;&emsp;<button type="submit">SUBMIT</button>
+<button type="reset">RESET</button>
+</form>
+
+</div>
+
+<style>
+    body
+    {
+        background-image: url("res.jpg");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position:center ;
+    }
+</style>
+</html>

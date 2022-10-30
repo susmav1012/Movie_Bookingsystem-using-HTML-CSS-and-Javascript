@@ -1,0 +1,110 @@
+<html>
+    <head>
+       
+	<script src="jquery-min.js"></script>
+    </head>
+    <style>
+        body{
+            background-image: linear-gradient(rgba(34, 34, 34, 0.75),rgba(0,0,0,0.75)),url('ticket.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <script>
+	  $(document).ready(function(){
+	    	$(".payment").hide();
+ 		$("#trigger").click(function(){
+    			$(".payment").show(); }); });
+    
+        function myfunc()
+        {
+     
+     var a,b,d,e,f,g,h,a1,b1;
+    
+    a=myform.Fname.value;
+    b=myform.Sname.value;
+      d=myform.movie.value;
+      e=myform.date.value;
+      f=myform.time.value;
+      g=myform.tickets.value;
+      a1=myform.email.value;
+      b1=myform.phone.value;
+
+    
+    
+      
+
+
+ document.write("<center><body style=background-image:url('tick.jpg')><h1> <center><mark>Details</mark></center></h1>")
+document.write("<table border=5 style=font-size:15pt;background-color:white><tr><td><h1>FIRST NAME:</td><td>"+a+"</td></tr>");
+document.write("<tr><td><h1>LAST NAME:</td><td>"+b+"</td></tr>");
+document.write("<tr><td><h1>MOVIE:</td><td>"+d+"</td></tr>");
+document.write("<tr><td><h1>SHOW DATE:</td><td>"+e+"</td></tr>");
+document.write("<tr><td><h1>SHOW TIME:</td><td>"+f+"</td></tr>");
+document.write("<tr><td><h1>NO. OF TICKETS:</td><td>"+g+"</td></tr>");
+document.write("<tr><td><h1>EMAIL:</td><td>"+a1+"</td></tr>");
+document.write("<tr><td><h1>PHONE NUMBER:</td><td>"+b1+"</td></tr>");
+document.write("<tr><td><h1>STATUS:</td><td>PAID</td></tr>");
+	alert("TICKET IS CONFIRMED");
+  var person = prompt("Please enter the OTP you jus recieved", " ");
+    }
+    </script>
+
+<body>
+
+    <div class="start">
+        <div>
+            <center>
+<font color="white">
+            <h2>TICKET BOOKING</h2>
+        </center> 
+        </div>
+    </div>
+
+    <dialog open>
+<form name= myform method="get" autocomplete="off">
+    <label for="Fname">FIRST NAME:</label>
+    <input type="text" id="Fname" name="Fname"><br>
+    <label for="Sname">LAST NAME:</label>
+    <input type="text" id="Sname" name="Sname"><br>
+    <label for="theaters">MOVIE:</label>
+    <input list="movie" id="Movie" name="movie"><br>
+    <datalist id="movie">
+    <option value ="96"></option>
+    <option value ="KANNUM KANNNUM KOLLAIDITHAL"></option>
+    <option value ="DEAR COMERADE"></option>
+    <option value ="THE BAD NUN"></option>
+    <option value ="THE GRUDGE"></option>
+    <option value ="THE SILENCE"></option>
+    <option value ="24"></option>  
+    <option value ="ENDHIRAN"></option>
+    <option value ="TIC-TIC-TIC"></option>
+                
+    </datalist>
+    <label for="date">SHOW DATE:</label>
+    <input type="date" id="date" name="date"><br>
+    <label for="time">SHOW TIMING:</label>
+    <input type="time" id="time" name="time"><br>
+    <label for="tickets">NO.OF TICKETS:</label>
+    <input type="number" name="tickets" value="tickets">
+    <br><br><br><br>
+    <label for="email">EMAIL ID:</label>
+    <input type="text" id="email" name="email"><br>
+    <label>MOBILE NO.:</label>
+   <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+   <input type="button" value="BOOK" id="trigger">
+    <input type="reset" value="CLEAR"><br>
+    <label for="method" class="payment" >Payment Mode:</label>
+    <input list="method" class="payment" name="method"><br>
+    <datalist id="method">
+    <option value ="Credit card"></option>
+    <option value ="Debit card"></option></datalist>
+    <label for="payment" class="payment" >CVV no:</label>
+    <input type="text" class="payment" name="payment"><br>
+    <label for="date" class="payment" >Date of payment :</label>
+    <input type="date" class="payment" name="payment"><br>
+    <input type="button" value="PAY" class="payment" onClick=myfunc()>
+</dialog>
+    </form>
